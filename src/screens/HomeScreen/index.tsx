@@ -12,6 +12,7 @@ import { Divider } from '../../components/funcionais/Divider'
 import { CallComponent } from '../../components/CallComponent'
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { FullCard } from '../../components/funcionais/FullCard'
 
 export const HomeScreen = () => {
     const navigation = useNavigation()
