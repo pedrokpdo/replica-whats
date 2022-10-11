@@ -17,9 +17,9 @@ export const HomeScreen = () => {
                 {
                     focus === 'conversa' ? (
                         <>
-                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'há 3 min'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
-                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'há 3 min'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
-                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'há 3 min'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
                         </>
                     ) : null
                 }
