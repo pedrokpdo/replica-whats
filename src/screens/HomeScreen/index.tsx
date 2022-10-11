@@ -61,7 +61,7 @@ export const HomeScreen = () => {
                     </>
                 ) : null
             }
-            <TouchableOpacity style={{ backgroundColor: '#238152', width: 50, height: 50, position: 'absolute', bottom: 16, right:16, borderRadius: 9999 }}>
+            <TouchableOpacity onPress={() => { navigation.navigate('ContactListScreen') }} style={{ backgroundColor: '#238152', width: 50, height: 50, position: 'absolute', bottom: 16, right:16, borderRadius: 9999 }}>
 
             </TouchableOpacity>
         </View>
