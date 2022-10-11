@@ -10,8 +10,11 @@ import { StatusComponent } from '../../components/StatusComponent'
 import { Row } from '../../components/funcionais/RowComponent'
 import { Divider } from '../../components/funcionais/Divider'
 import { CallComponent } from '../../components/CallComponent'
+import { TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 export const HomeScreen = () => {
+    const navigation = useNavigation()
     const [focus, setFocus] = useState('conversa')
     return (
         <ContainerComponent>
@@ -20,7 +23,9 @@ export const HomeScreen = () => {
             {
                 focus === 'conversa' ? (
                     <Space>
-                        <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+                        <TouchableOpacity onPress={() => { navigation.navigate('TcScreen') }}>
+                            <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+                        </TouchableOpacity>
                         <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
                         <TcComponent photo={profile} name={'Mark Zuttemberg'} hour={'12:20'} message={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
                     </Space>
