@@ -7,7 +7,7 @@ import { TcScreen } from '../screens/TcScreen'
 const { Navigator, Screen } = createNativeStackNavigator()
 
 export const HomeStack = () => {
-    
+
     return (
         <Navigator screenOptions={{ headerShown: false }}>
             <Screen name='HomeScreen' component={HomeScreen} />
