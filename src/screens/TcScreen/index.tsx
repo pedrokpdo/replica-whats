@@ -5,6 +5,7 @@ import { ContainerComponent } from '../../components/funcionais/ContainerCompone
 import { FullCard } from '../../components/funcionais/FullCard'
 import { Row } from '../../components/funcionais/RowComponent'
 import { Title } from '../../components/funcionais/TitleComponent'
+import { View } from 'react-native'
 //@ts-ignore
 import profile from '../../assets/perfil.jpg'
 import { Space } from '../../components/funcionais/SpaceComponent'
@@ -13,7 +14,7 @@ import { MessageComponent } from '../../components/MessageComponent'
 import { SendMessageComponent } from '../../components/SendMessageComponent'
 export const TcScreen = () => {
     return (
-        <ContainerComponent style={{ backgroundColor: '#c7c0a6' }}>
+        <ContainerComponent style={{ backgroundColor: '#c7c0a6', height: '100%' }}>
             <FullCard style={{ backgroundColor: '#238152' }}>
                 <Row style={{ alignItems: 'center', justifyContent: 'space-between' }}>
                     <Row style={{ alignItems: 'center' }}>
@@ -41,7 +42,9 @@ export const TcScreen = () => {
                 <MessageComponent text='Que pena, ta bom então p.p' message={'me'} />
             </Space>
             <Space>
-                <SendMessageComponent /> 
+                <View style={{ justifyContent: 'flex-end', flex: 1, height: 230 }}>
+                    <SendMessageComponent />
+                </View>
             </Space>
         </ContainerComponent>
     )
