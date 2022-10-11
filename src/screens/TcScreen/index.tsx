@@ -10,6 +10,7 @@ import profile from '../../assets/perfil.jpg'
 import { Space } from '../../components/funcionais/SpaceComponent'
 import { Text } from '../../components/funcionais/TextComponent'
 import { MessageComponent } from '../../components/MessageComponent'
+import { SendMessageComponent } from '../../components/SendMessageComponent'
 export const TcScreen = () => {
     return (
         <ContainerComponent style={{ backgroundColor: '#c7c0a6' }}>
@@ -38,6 +39,9 @@ export const TcScreen = () => {
                 <MessageComponent text='Hoje não' message={'you'} />
                 <MessageComponent text='To muito ocupado' message={'you'} />
                 <MessageComponent text='Que pena, ta bom então p.p' message={'me'} />
+            </Space>
+            <Space>
+                <SendMessageComponent /> 
             </Space>
         </ContainerComponent>
     )
