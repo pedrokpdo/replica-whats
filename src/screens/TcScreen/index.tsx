@@ -7,9 +7,12 @@ import { Row } from '../../components/funcionais/RowComponent'
 import { Title } from '../../components/funcionais/TitleComponent'
 //@ts-ignore
 import profile from '../../assets/perfil.jpg'
+import { Space } from '../../components/funcionais/SpaceComponent'
+import { Text } from '../../components/funcionais/TextComponent'
+import { MessageComponent } from '../../components/MessageComponent'
 export const TcScreen = () => {
     return (
-        <ContainerComponent>
+        <ContainerComponent style={{ backgroundColor: '#c7c0a6' }}>
             <FullCard style={{ backgroundColor: '#238152' }}>
                 <Row style={{ alignItems: 'center' }}>
                     <Row style={{ alignItems: 'center' }}>
@@ -24,6 +27,14 @@ export const TcScreen = () => {
                     </Row>
                 </Row>
             </FullCard>
+            <Space top={2}>
+                <FullCard style={{ borderRadius: 8 }}>
+                <Text style={{ color: 'gray', textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum itaque eligendi corrupti sapiente magnam, quisquam fugiat? Dolores ratione animi sint.</Text>
+                </FullCard>
+            </Space>
+            <Space>
+                <MessageComponent message={'me'}/>
+            </Space>
         </ContainerComponent>
     )
 }
