@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "replica-whats",
+    "slug": "replica-whats",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
