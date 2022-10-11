@@ -12,13 +12,14 @@ import { Divider } from '../../components/funcionais/Divider'
 import { CallComponent } from '../../components/CallComponent'
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import { FullCard } from '../../components/funcionais/FullCard'
+import { View } from 'react-native'
+import { Title } from '../../components/funcionais/TitleComponent'
 
 export const HomeScreen = () => {
-    const navigation = useNavigation()
+    const navigation = useNavigation<any>()
     const [focus, setFocus] = useState('conversa')
     return (
-        <ContainerComponent>
+        <View style={{ height: '100%' }}>
             <HeaderHome />
             <TopTabComponent focus={focus} setFocus={setFocus} />
             {
@@ -60,6 +61,9 @@ export const HomeScreen = () => {
                     </>
                 ) : null
             }
-        </ContainerComponent>
+            <TouchableOpacity style={{ backgroundColor: '#238152', width: 50, height: 50, position: 'absolute', bottom: 16, right:16, borderRadius: 9999 }}>
+
+            </TouchableOpacity>
+        </View>
     )
 }
