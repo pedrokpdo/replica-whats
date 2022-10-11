@@ -9,6 +9,7 @@ import { ContainerComponent } from '../../components/funcionais/ContainerCompone
 import { StatusComponent } from '../../components/StatusComponent'
 import { Row } from '../../components/funcionais/RowComponent'
 import { Divider } from '../../components/funcionais/Divider'
+import { CallComponent } from '../../components/CallComponent'
 
 export const HomeScreen = () => {
     const [focus, setFocus] = useState('conversa')
@@ -39,6 +40,16 @@ export const HomeScreen = () => {
                             <StatusComponent photo={profile} name='Nome da pessoa' hour='Há 14 min' />
                             <StatusComponent photo={profile} name='Nome da pessoa' hour='Há 14 min' />
                             <StatusComponent photo={profile} name='Nome da pessoa' hour='Há 14 min' />
+                        </Space>
+                    </>
+                ) : null
+            }
+            {
+                focus === 'chamada' ? (
+                    <>
+                        <Space>
+                            <CallComponent photo={profile} hour='ha 15 min' name='Mark Zuttemberg' type='ok' />
+                            <CallComponent photo={profile} hour='ha 15 min' name='Mark Zuttemberg' type='no' />
                         </Space>
                     </>
                 ) : null
