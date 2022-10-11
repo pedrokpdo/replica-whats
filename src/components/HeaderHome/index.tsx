@@ -5,7 +5,7 @@ import { Row } from '../funcionais/RowComponent'
 import { Title } from '../funcionais/TitleComponent'
 export const HeaderHome = () => {
     return (
-        <Row style={{ backgroundColor: '#238152', alignItems: 'center', justifyContent: 'space-between', padding: 16 }}>
+        <Row style={{ backgroundColor: '#238152', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 48, padding: 24 }}>
             <Title style={{ color: 'white', fontSize: 28 }}>WhatsApp</Title>
             <Row style={{ alignItems: 'center', width: 100, justifyContent: 'space-around' }}>
                 <AntDesign name='search1' size={30} color={'white'} />
