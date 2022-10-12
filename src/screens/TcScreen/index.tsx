@@ -1,6 +1,6 @@
 import { AntDesign, Feather, SimpleLineIcons } from '@expo/vector-icons'
 import React from 'react'
-import { Image } from 'react-native'
+import { Image, TouchableOpacity } from 'react-native'
 import { ContainerComponent } from '../../components/funcionais/ContainerComponent'
 import { FullCard } from '../../components/funcionais/FullCard'
 import { Row } from '../../components/funcionais/RowComponent'
@@ -12,7 +12,9 @@ import { Space } from '../../components/funcionais/SpaceComponent'
 import { Text } from '../../components/funcionais/TextComponent'
 import { MessageComponent } from '../../components/MessageComponent'
 import { SendMessageComponent } from '../../components/SendMessageComponent'
+import { useNavigation } from '@react-navigation/native'
 export const TcScreen = () => {
+    const navigation = useNavigation<any>()
     return (
         <ContainerComponent style={{ backgroundColor: '#c7c0a6', height: '100%' }}>
             <FullCard style={{ backgroundColor: '#238152' }}>
@@ -20,7 +22,9 @@ export const TcScreen = () => {
                     <Row style={{ alignItems: 'center' }}>
                         <Feather name='arrow-left' size={24} color={'white'} />
                         <Image source={profile} style={{ width: 50, height: 50, borderRadius: 30, marginHorizontal: 8 }} />
-                        <Title bold style={{ fontSize: 24, color: 'white' }}>Pedro Henrique</Title>
+                        <TouchableOpacity onPress={() => {navigation.navigate('ContactScreen')}}>
+                            <Title bold style={{ fontSize: 24, color: 'white' }}>Pedro Henrique</Title>
+                        </TouchableOpacity>
                     </Row>
                     <Row style={{ justifyContent: 'space-around', width: 140 }}>
                         <AntDesign name='camera' color='white' size={24} />

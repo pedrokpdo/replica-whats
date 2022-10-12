@@ -13,26 +13,26 @@ export const ContactListScreen = () => {
         <ContainerComponent>
             <HeaderHome />
             <Space>
-                <Row top={2}>
-                    <ContactComponent />
+                <Row top={4}>
+                    <ContactComponent name={'Novo Contato'} />
                 </Row>
-                <Row top={2}>
-                    <ContactComponent />
+                <Row top={4}>
+                    <ContactComponent name={'Novo Grupo'} />
                 </Row>
             </Space>
-            <Space top={2}>
+            <Space top={4}>
                 <Title style={{ color: 'gray' }}>Contatos no whatsapp</Title>
-                <Row top={2}>
-                    <ContactComponent photo={profile} />
+                <Row top={4}>
+                    <ContactComponent name={'Juscelino Kubicheck'} photo={profile} />
                 </Row>
-                <Row top={2}>
-                    <ContactComponent photo={profile} />
+                <Row top={4}>
+                    <ContactComponent name={'Luis Inacio Lula Da Silva'} photo={profile} />
                 </Row>
-                <Row top={2}>
-                    <ContactComponent photo={profile} />
+                <Row top={4}>
+                    <ContactComponent name={'Bolsomito Da luz Do Senhor'} photo={profile} />
                 </Row>
-                <Row top={2}>
-                    <ContactComponent photo={profile} />
+                <Row top={4}>
+                    <ContactComponent name={'LandsCape'} photo={profile} />
                 </Row>
             </Space>
         </ContainerComponent>
